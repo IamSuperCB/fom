@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "@iamsupercb/template",
+      "path": "."
+    },
+		{
+			"name": "TypesSript",
+			"path": "./typescript"
+		},
+		{
+			"name": "Python",
+			"path": "./python"
+		},
+		{
+			"name": "Flutter",
+			"path": "./flutter"
+		}
+  ],
+  "settings": {
+    "editor.tabSize": 2
+  }
+}

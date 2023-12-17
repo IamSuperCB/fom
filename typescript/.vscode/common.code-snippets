@@ -1,0 +1,119 @@
+{
+  "Bootstrap extensionless": {
+    "prefix": "file",
+    "body": ["#!/usr/bin/env node"],
+    "description": "Boostrapt extensionless script"
+  },
+  "Promise TS return": {
+    "scope": "typescript",
+    "prefix": "promise TS",
+    "body": [
+      "function $1($2): Promise<$3> {",
+      "\treturn new Promise<$3>(function (resolve, reject) {",
+      "\t\tresolve()",
+      "\t})",
+      "}"
+    ],
+    "description": "Function returns promise"
+  },
+  "Promise JS return": {
+    "scope": "javascript",
+    "prefix": "promise JS",
+    "body": [
+      "function $1($2) {",
+      "\treturn new Promise<$3>(function (resolve, reject) {",
+      "\t\tresolve()",
+      "\t})",
+      "}"
+    ],
+    "description": "Function returns promise"
+  },
+  "for loop": {
+    "scope": "typescript,javascript",
+    "prefix": "for loop",
+    "body": ["for(let index = 0 index < $1.length index++){", "", "}"],
+    "description": "for loop"
+  },
+  "json log4js default configuration": {
+    "scope": "json",
+    "prefix": "default",
+    "body": [
+      "{",
+      "  'appenders': {",
+      "    'out': {",
+      "      'type': 'console',",
+      "      'layout': {",
+      "        'type': 'pattern',",
+      "        'pattern': '%[%d %p %c :%] %m'",
+      "      }",
+      "    }",
+      "  },",
+      "  'categories': {",
+      "    'default': {",
+      "      'appenders': ['out'],",
+      "      'level': 'debug'",
+      "    }",
+      "  }",
+      "}"
+    ]
+  },
+  "logger bootstrap index": {
+    "scope": "typescript, javascript",
+    "prefix": "logger",
+    "body": [
+      "'use strict';",
+      "import * as log4js from 'log4js';",
+      "import { getPackageRelativeFilename, defaultLog4JSConfiguration } from '$1common';",
+      "const logger = log4js.getLogger(getPackageRelativeFilename(module.filename));",
+      "log4js.configure(defaultLog4JSConfiguration);"
+    ]
+  },
+  "logger bootstrap module": {
+    "scope": "typescript, javascript",
+    "prefix": "logger",
+    "body": [
+      "'use strict';",
+      "import * as log4js from '@log4js-node/log4js-api';",
+      "import { getPackageRelativeFilename } from '$1common';",
+      "const logger = log4js.getLogger(getPackageRelativeFilename(module.filename));"
+    ]
+  },
+  "logger add": {
+    "scope": "typescript,javascript",
+    "prefix": "logger",
+    "body": [
+      "logger.debug('== $1 begins ==');",
+      "logger.info('Here be dragons');",
+      "logger.debug('== $1 ends ==');"
+    ],
+    "description": "Bootsrap a typescript file."
+  },
+  "logger begins": {
+    "scope": "typescript,javascript",
+    "prefix": "logger",
+    "body": ["logger.debug('== $1 begins ==');"]
+  },
+  "logger ends": {
+    "scope": "typescript,javascript",
+    "prefix": "logger",
+    "body": ["logger.debug('== $1 ends ==');"]
+  },
+  "aysnc main": {
+    "scope": "typescript,javascript",
+    "prefix": "async",
+    "body": [
+      "logger.debug('== $1 begins ==');",
+      "(async () => {",
+      "  return 'Here be dragons'",
+      "})()",
+      "  .then((result) => logger.debug(JSON.stringify(result, null, 2)))",
+      "  .catch((reason) => logger.error(JSON.stringify(reason, null, 2)))",
+      "  .finally(() => logger.debug('== $1 ends =='));"
+    ]
+  },
+  "prisma findMany": {
+    "scope": "typescript,javascript",
+    "prefix": "prisma",
+    "body": ["prisma.$1.findMany();"]
+  }
+}
