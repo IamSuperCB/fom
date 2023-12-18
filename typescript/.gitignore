@@ -1,0 +1,24 @@
+# Dependency directories
+node_modules/
+
+# Output of the compiler
+dist/
+
+# IDE - VSCode
+# .vscode/
+# *.code-workspace
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# TypeScript type files
+*.d.ts
+
+# TypeScript Debug
+tsconfig.tsbuildinfo
+
+# Environment variables
+.env
+
+coverage/

@@ -1,8 +1,4 @@
 {
   "editor.tabSize": 2,
-  "terminal.integrated.env.linux": {
-    "AAD_TENANT_ID": "fb03ccd6-4475-47ed-bccb-746d787a5e60",
-    "AAD_CLIENT_ID": "57f2cc55-4921-427d-bd7e-3c9da05265f9",
-    "AAD_ENDPOINT_HOST": "https://login.microsoftonline.com"
-  }
+  "terminal.integrated.env.linux": {}
 }

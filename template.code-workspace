@@ -4,20 +4,28 @@
       "name": "@iamsupercb/template",
       "path": "."
     },
-		{
-			"name": "TypesSript",
-			"path": "./typescript"
-		},
-		{
-			"name": "Python",
-			"path": "./python"
-		},
-		{
-			"name": "Flutter",
-			"path": "./flutter"
-		}
+    {
+      "name": "TypeScript",
+      "path": "./typescript"
+    },
+    {
+      "name": "Python",
+      "path": "./python"
+    },
+    {
+      "name": "Flutter",
+      "path": "./flutter"
+    }
   ],
   "settings": {
-    "editor.tabSize": 2
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Carbonight (rainglow)",
+    "workbench.sideBar.location": "right",
+    "remote.autoForwardPorts": false,
+    "terminal.integrated.env.linux": {},
+    "python.terminal.activateEnvironment": false
   }
 }
