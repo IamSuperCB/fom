@@ -1,5 +1,6 @@
-# Template
-Multiple language library template repository.
+# Fortress of Multitude
+
+Where I go to figure out things with people.
 
 ## Languages
 

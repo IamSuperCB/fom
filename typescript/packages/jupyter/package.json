@@ -1,0 +1,32 @@
+{
+  "name": "@iamsupercb/jupyter",
+  "packageManager": "yarn@4.0.2",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/IamSuperCB/fos.git",
+    "directory": "packages/jupyter"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "tsc",
+    "example": "nodemon bin/example.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@iamsupercb/common": "workspace:^",
+    "@log4js-node/log4js-api": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/log4js": "^2.3.5",
+    "@types/node": "^20.10.5",
+    "log4js": "^6.9.1",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

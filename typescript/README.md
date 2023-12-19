@@ -1,1 +1,9 @@
-# TypeScript template
+# TypeScript Monorepo
+
+## Packages
+
+### common
+
+### msal
+
+### jupyter

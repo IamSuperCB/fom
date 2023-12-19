@@ -22,10 +22,15 @@
     "editor.formatOnSave": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
-    "workbench.colorTheme": "Carbonight (rainglow)",
+    "workbench.colorTheme": "Revelation (rainglow)",
     "workbench.sideBar.location": "right",
     "remote.autoForwardPorts": false,
     "terminal.integrated.env.linux": {},
-    "python.terminal.activateEnvironment": false
+    "python.terminal.activateEnvironment": false,
+    "jest.disabledWorkspaceFolders": [
+      "Flutter",
+      "Python",
+      "@iamsupercb/template"
+    ]
   }
 }

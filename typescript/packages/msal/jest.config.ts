@@ -105,7 +105,7 @@ const config: Config = {
   preset: "ts-jest",
 
   // Run tests from one or more projects
-  projects: ["./packages/*/jest.config.ts"],
+  // projects: ["./packages/*/jest.config.ts"],
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
@@ -159,7 +159,6 @@ const config: Config = {
   //   "**/__tests__/**/*.[jt]s?(x)",
   //   "**/?(*.)+(spec|test).[tj]s?(x)"
   // ],
-  testMatch: ["**/__tests__/**/*.ts?(x)", "**/?(*.)+(spec|test).ts?(x)"],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [

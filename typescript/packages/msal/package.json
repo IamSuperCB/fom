@@ -1,0 +1,39 @@
+{
+  "name": "@iamsupercb/msal",
+  "version": "0.0.0",
+  "packageManager": "yarn@4.0.2",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/IamSuperCB/fos.git",
+    "directory": "iamsupercb/common"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "tsc",
+    "deviceCode": "nodemon bin/deviceCode.ts",
+    "accounts": "nodemon bin/accounts.ts",
+    "accountInfo": "nodemon bin/accountInfo.ts",
+    "silentToken": "nodemon bin/silentToken.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@azure/msal": "^1.4.5",
+    "@azure/msal-node": "^2.6.0",
+    "@azure/msal-node-extensions": "^1.0.8",
+    "@iamsupercb/common": "workspace:^",
+    "@log4js-node/log4js-api": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/log4js": "^2.3.5",
+    "@types/node": "^18.19.3",
+    "log4js": "^6.9.1",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

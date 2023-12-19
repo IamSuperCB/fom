@@ -22,3 +22,13 @@ tsconfig.tsbuildinfo
 .env
 
 coverage/
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.yarn/install-state.gz
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/cache

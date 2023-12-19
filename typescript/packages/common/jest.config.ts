@@ -105,7 +105,7 @@ const config: Config = {
   preset: "ts-jest",
 
   // Run tests from one or more projects
-  projects: ["./packages/*/jest.config.ts"],
+  // projects: ["./packages/*/jest.config.ts"],
 
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
