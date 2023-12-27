@@ -2,22 +2,20 @@
   "name": "@iamsupercb/common",
   "version": "0.0.0",
   "packageManager": "yarn@4.0.2",
-  "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "https",
-    "url": "https://github.com/IamSuperCB/fos.git",
-    "directory": "iamsupercb/common"
+    "url": "git+https://github.com/IamSuperCB/fom.git",
+    "directory": "typescript/packages/common"
   },
   "publishConfig": {
-    "access": "restricted",
+    "access": "public",
     "tag": "latest",
-    "registry": "https://npm.pkg.github.com/iamsupercb/fos"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "tsc",
-    "buildPublish": "npm run build && npm publish",
     "example": "nodemon bin/example.ts",
     "test": "jest"
   },

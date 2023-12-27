@@ -25,12 +25,16 @@
     "workbench.colorTheme": "Revelation (rainglow)",
     "workbench.sideBar.location": "right",
     "remote.autoForwardPorts": false,
-    "terminal.integrated.env.linux": {},
+    "terminal.integrated.env.linux": {
+      "LOG4JS_DEFAULT_LEVEL": "debug",
+      "rest-client.enableTelemetry": "false"
+    },
     "python.terminal.activateEnvironment": false,
     "jest.disabledWorkspaceFolders": [
       "Flutter",
       "Python",
       "@iamsupercb/template"
-    ]
+    ],
+    "livePreview.portNumber": 5000
   }
 }
