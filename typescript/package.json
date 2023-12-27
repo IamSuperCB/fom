@@ -8,8 +8,7 @@
   "scripts": {
     "build": "yarn workspaces foreach --all -t run build",
     "dev": "nodemon $0",
-    "test": "yarn workspaces foreach --all -t run test",
-    "publish": "yarn workspaces foreach --all -t run publish"
+    "test": "yarn workspaces foreach --all -t run test"
   },
   "repository": {
     "type": "git",
