@@ -1,6 +1,6 @@
 {
   "name": "@iamsupercb/common",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "yarn@4.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
