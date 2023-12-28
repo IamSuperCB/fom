@@ -1,8 +1,12 @@
 {
   "folders": [
     {
-      "name": "@iamsupercb/template",
+      "name": "@iamsupercb/fom",
       "path": "."
+    },
+    {
+      "name": "data",
+      "path": "/workspace/data"
     },
     {
       "name": "TypeScript",
@@ -33,7 +37,8 @@
     "jest.disabledWorkspaceFolders": [
       "Flutter",
       "Python",
-      "@iamsupercb/template"
+      "data",
+      "@iamsupercb/fom"
     ],
     "livePreview.portNumber": 5000
   }
