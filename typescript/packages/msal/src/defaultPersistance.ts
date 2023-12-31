@@ -9,7 +9,7 @@ import MSALNodeExtensions from '@azure/msal-node-extensions';
 
 export const cachePath = process.env.MSAL_CACHE_LOCATION
   ? Path.join(process.env.MSAL_CACHE_LOCATION, `msal.cache.json`)
-  : Path.join(process.env.HOME as string, '.fos', 'msal', `msal.cache.json`);
+  : Path.join(process.env.HOME as string, '.fom', 'msal', `msal.cache.json`);
 
 if (!FS.existsSync(cachePath)) {
   FS.mkdirSync(Path.dirname(cachePath), { recursive: true });

@@ -493,7 +493,7 @@ __metadata:
     pkg-dir: "npm:^4.2.0"
     ts-jest: "npm:^29.1.1"
     ts-node: "npm:^10.9.2"
-    type-fest: "npm:^4.8.3"
+    type-fest: "npm:^4.9.0"
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
@@ -511,10 +511,8 @@ __metadata:
     "@types/prettier": "npm:^3.0.0"
     dotenv-cli: "npm:^7.3.0"
     express: "npm:^4.18.2"
-    express-jwt: "npm:^8.4.1"
     helmet: "npm:^7.1.0"
     jsonwebtoken: "npm:^9.0.2"
-    jwks-rsa: "npm:^3.1.0"
     log4js: "npm:^6.9.1"
     nodemon: "npm:^3.0.2"
     prettier: "npm:^3.1.1"
@@ -533,6 +531,27 @@ __metadata:
     "@types/log4js": "npm:^2.3.5"
     "@types/node": "npm:^18.19.3"
     jest: "npm:^29.7.0"
+    log4js: "npm:^6.9.1"
+    nodemon: "npm:^3.0.2"
+    ts-jest: "npm:^29.1.1"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
+"@iamsupercb/jwt@workspace:^, @iamsupercb/jwt@workspace:packages/jwt":
+  version: 0.0.0-use.local
+  resolution: "@iamsupercb/jwt@workspace:packages/jwt"
+  dependencies:
+    "@iamsupercb/common": "workspace:^"
+    "@log4js-node/log4js-api": "npm:^1.0.2"
+    "@types/jest": "npm:^29.5.11"
+    "@types/jsonwebtoken": "npm:^9.0.5"
+    "@types/log4js": "npm:^2.3.5"
+    "@types/node": "npm:^18.19.3"
+    jest: "npm:^29.7.0"
+    jsonwebtoken: "npm:^9.0.2"
+    jwks-rsa: "npm:^3.1.0"
     log4js: "npm:^6.9.1"
     nodemon: "npm:^3.0.2"
     ts-jest: "npm:^29.1.1"
@@ -568,11 +587,12 @@ __metadata:
   dependencies:
     "@iamsupercb/common": "workspace:^"
     "@iamsupercb/jupyter": "workspace:^"
+    "@iamsupercb/jwt": "workspace:^"
     "@iamsupercb/msal": "workspace:^"
     "@microsoft/microsoft-graph-client": "npm:^3.0.7"
     "@types/jest": "npm:^29.5.11"
     "@types/node": "npm:^18.19.3"
-    axios: "npm:^1.6.2"
+    axios: "npm:^1.6.3"
     jest: "npm:^29.7.0"
     lerna: "npm:^8.0.1"
     log4js: "npm:^6.9.1"
@@ -1666,7 +1686,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jsonwebtoken@npm:^9, @types/jsonwebtoken@npm:^9.0.2, @types/jsonwebtoken@npm:^9.0.5":
+"@types/jsonwebtoken@npm:^9.0.2, @types/jsonwebtoken@npm:^9.0.5":
   version: 9.0.5
   resolution: "@types/jsonwebtoken@npm:9.0.5"
   dependencies:
@@ -2096,7 +2116,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.5.1":
+"axios@npm:^1.5.1, axios@npm:^1.6.3":
   version: 1.6.3
   resolution: "axios@npm:1.6.3"
   dependencies:
@@ -2104,17 +2124,6 @@ __metadata:
     form-data: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
   checksum: dcc6d982353db33e6893ef01cdf81d0a0548dbd8fba0cb046dc4aee1a6a16226721faa4c2a13b2673d47130509629cdb93bb991b3a2bd4ef17a5ac27a8bba0da
-  languageName: node
-  linkType: hard
-
-"axios@npm:^1.6.2":
-  version: 1.6.2
-  resolution: "axios@npm:1.6.2"
-  dependencies:
-    follow-redirects: "npm:^1.15.0"
-    form-data: "npm:^4.0.0"
-    proxy-from-env: "npm:^1.1.0"
-  checksum: 9b77e030e85e4f9cbcba7bb52fbff67d6ce906c92d213e0bd932346a50140faf83733bf786f55bd58301bd92f9973885c7b87d6348023e10f7eaf286d0791a1d
   languageName: node
   linkType: hard
 
@@ -3428,24 +3437,6 @@ __metadata:
   version: 3.1.1
   resolution: "exponential-backoff@npm:3.1.1"
   checksum: 160456d2d647e6019640bd07111634d8c353038d9fa40176afb7cd49b0548bdae83b56d05e907c2cce2300b81cae35d800ef92fefb9d0208e190fa3b7d6bb579
-  languageName: node
-  linkType: hard
-
-"express-jwt@npm:^8.4.1":
-  version: 8.4.1
-  resolution: "express-jwt@npm:8.4.1"
-  dependencies:
-    "@types/jsonwebtoken": "npm:^9"
-    express-unless: "npm:^2.1.3"
-    jsonwebtoken: "npm:^9.0.0"
-  checksum: 660cd1eb3f81befb9cf0e1aa928864960fab98dac9efadcd3aa07b85849bf4c61c379791422c6a37848f55177248fade403bdb7e203dc63a93fbf2328855f589
-  languageName: node
-  linkType: hard
-
-"express-unless@npm:^2.1.3":
-  version: 2.1.3
-  resolution: "express-unless@npm:2.1.3"
-  checksum: c2b6776cff1c6a7d77c719cb841930c1acdfd11839fcc5e7aa9ed7d638e524a22eba2473ef3b5d7403d77097e8fcd920a2be572265ab578569503547d98ad9ce
   languageName: node
   linkType: hard
 
@@ -8360,10 +8351,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^4.8.3":
-  version: 4.8.3
-  resolution: "type-fest@npm:4.8.3"
-  checksum: 978edf5d00651e944b8c4d50f765a4cc09126e7fb90b46ed157265012e2f8aeb178c0ca493a175213ffa1705a795e4b5579c2ef4bc27bdd3462cdceccbf386f7
+"type-fest@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "type-fest@npm:4.9.0"
+  checksum: 7e6423f7337928a7323ce8a68cfbbaf30ecb70b9c635207899e58297d219c71be4a8c50b52afb9fe09c9f44b2c4276d0a44bb95acabab7bc942455f980aad267
   languageName: node
   linkType: hard
 

@@ -8,8 +8,8 @@ export function audit(req: Request, res: Response, next: NextFunction) {
   logger.debug('== audit begins ==');
   res.on('finish', () => {
     logger.info(`${req.ip} ${req.method} ${req.originalUrl} ${res.statusCode}`);
+    logger.debug('== audit ends ==');
   });
-  logger.debug('== audit ends ==');
   next();
 }
 logger.debug('== ends ==');

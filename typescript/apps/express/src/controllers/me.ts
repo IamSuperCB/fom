@@ -9,7 +9,7 @@ var router = Router();
 
 router.get('/', (req: Request, res: Response, next: NextFunction) => {
   logger.debug('== me begins ==');
-  res.json({ message: 'Hello, World!' });
+  res.json(res.locals.user);
   next();
   logger.debug('== me ends ==');
 });

@@ -11,6 +11,6 @@ export const defaultConfiguration: IConfiguration = {
     process.env.AAD_ENDPOINT_HOST || 'https://login.microsoftonline.com',
   homeAccountId:
     process.env.MSAL_HOME_ACCOUNT_ID ||
-    '00000000-0000-0000-3ea9-bbc9521feb63.9188040d-6c67-4c5b-b112-36a304b66dad',
+    'b46c92e7-801a-4382-aabf-23c20491fba0.fb03ccd6-4475-47ed-bccb-746d787a5e60',
 };
 logger.debug('== ends ==');

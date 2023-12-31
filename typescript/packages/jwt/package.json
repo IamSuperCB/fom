@@ -1,5 +1,5 @@
 {
-  "name": "@iamsupercb/common",
+  "name": "@iamsupercb/jwt",
   "version": "0.0.1",
   "packageManager": "yarn@4.0.2",
   "main": "dist/index.js",
@@ -16,16 +16,17 @@
   },
   "scripts": {
     "build": "tsc",
-    "example": "nodemon bin/example.ts",
     "test": "jest"
   },
   "dependencies": {
+    "@iamsupercb/common": "workspace:^",
     "@log4js-node/log4js-api": "^1.0.2",
-    "pkg-dir": "^4.2.0",
-    "type-fest": "^4.9.0"
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",
+    "@types/jsonwebtoken": "^9.0.5",
     "@types/log4js": "^2.3.5",
     "@types/node": "^18.19.3",
     "jest": "^29.7.0",
