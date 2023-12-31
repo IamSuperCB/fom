@@ -8,12 +8,16 @@ import { validate } from '@iamsupercb/jwt';
 
 export async function auth(req: Request, res: Response, next: NextFunction) {
   logger.debug('== auth begins ==');
-  const token: string | undefined = req.headers.authorization?.split(' ')[1]; // Assuming the token is in the format: Bearer <token>
-  if (!token) {
-    return res.status(401).send('Unauthorized');
+  try {
+    const token: string | undefined = req.headers.authorization?.split(' ')[1]; // Assuming the token is in the format: Bearer <token>
+    if (!token) {
+      return res.status(401).send('Unauthorized');
+    }
+    const decoded = await validate(token);
+    res.locals.user = decoded;
+    next();
+  } catch (err) {
+    next(err);
   }
-  const decoded = await validate(token);
-  res.locals.user = decoded;
-  next();
 }
 logger.debug('== ends ==');

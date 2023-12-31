@@ -503,6 +503,7 @@ __metadata:
   resolution: "@iamsupercb/express@workspace:apps/express"
   dependencies:
     "@iamsupercb/common": "workspace:^"
+    "@iamsupercb/jwt": "workspace:^"
     "@log4js-node/log4js-api": "npm:^1.0.2"
     "@types/express": "npm:^4.17.21"
     "@types/jsonwebtoken": "npm:^9.0.5"

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iamsupercb/common": "workspace:^",
+    "@iamsupercb/jwt": "workspace:^",
     "@log4js-node/log4js-api": "^1.0.2",
     "@types/log4js": "^2.3.5",
     "express": "^4.18.2",

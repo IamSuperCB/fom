@@ -11,11 +11,19 @@ import * as https from 'https';
 import * as FS from 'fs';
 import { skunkworks, errorHandler } from './middlewares';
 import * as Controllers from './controllers';
+import { initJWKSClientCache } from '@iamsupercb/jwt';
 const express = require('express');
 const helmet = require('helmet');
 const app = express();
 const port = 3000;
 import { Request, Response } from 'express';
+initJWKSClientCache([
+  {
+    key: 'fb03ccd6-4475-47ed-bccb-746d787a5e60',
+    jwksUri:
+      'https://login.microsoftonline.com/fb03ccd6-4475-47ed-bccb-746d787a5e60/discovery/v2.0/keys',
+  },
+]);
 app.use(helmet());
 app.disable('x-powered-by');
 express.json({ type: 'application/json', strict: true });
