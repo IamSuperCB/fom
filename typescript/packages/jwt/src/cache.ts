@@ -17,6 +17,9 @@ export function initJWKSClientCache(options: jwksClientCacheOptions[]): void {
       key: option.key,
       client: jwksRSA({
         jwksUri: option.jwksUri,
+        cache: true, // Enable cache
+        cacheMaxEntries: 5, // Max number of keys to store in the cache
+        cacheMaxAge: 86400000, // How long to cache the key in milliseconds (86400000 ms = 24 hours)
       }),
     });
   });

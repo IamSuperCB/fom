@@ -9,8 +9,7 @@ log4js.configure(defaultLog4JSConfiguration);
 logger.debug('== begins ==');
 import * as https from 'https';
 import * as FS from 'fs';
-import { skunkworks, errorHandler } from './middlewares';
-import * as Controllers from './controllers';
+import * as expressCommon from '@iamsupercb/express-common';
 import { initJWKSClientCache } from '@iamsupercb/jwt';
 const express = require('express');
 const helmet = require('helmet');
@@ -27,12 +26,11 @@ initJWKSClientCache([
 app.use(helmet());
 app.disable('x-powered-by');
 express.json({ type: 'application/json', strict: true });
-app.use(skunkworks);
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
 });
-app.use('/api/v1', Controllers.default);
-app.use(errorHandler);
+app.use('/api/v1/common', expressCommon.controllers.common);
+app.use(expressCommon.middlewares.errorHandler);
 
 const options = {
   key: FS.readFileSync('ssl/key.pem'),

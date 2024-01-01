@@ -5,13 +5,12 @@ const logger = log4js.getLogger(getPackageRelativeFilename(__filename));
 logger.debug('== begins ==');
 import { Router, Request, Response, NextFunction } from 'express';
 import { register } from 'module';
-var router = Router();
+export var me = Router();
 
-router.get('/', (req: Request, res: Response, next: NextFunction) => {
+me.get('/', (req: Request, res: Response, next: NextFunction) => {
   logger.debug('== me begins ==');
   res.json(res.locals.user);
   next();
   logger.debug('== me ends ==');
 });
-export default router;
 logger.debug('== ends ==');

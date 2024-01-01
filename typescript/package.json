@@ -34,12 +34,10 @@
     "apps/*",
     "packages/*"
   ],
-  "dependencies": {
-    "@iamsupercb/jwt": "workspace:^"
-  },
   "devDependencies": {
     "@iamsupercb/common": "workspace:^",
     "@iamsupercb/jupyter": "workspace:^",
+    "@iamsupercb/jwt": "workspace:^",
     "@iamsupercb/msal": "workspace:^",
     "@microsoft/microsoft-graph-client": "^3.0.7",
     "@types/jest": "^29.5.11",
