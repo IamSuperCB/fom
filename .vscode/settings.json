@@ -7,17 +7,14 @@
     "workbench.colorTheme": "",
     "workbench.sideBar.location": "right",
     "remote.autoForwardPorts": false,
-    "terminal.integrated.env.linux": {
-      
-    },
+    "terminal.integrated.env.linux": {},
     "python.terminal.activateEnvironment": false,
-    "jest.disabledWorkspaceFolders": [
-      
-    ]
+    "jest.disabledWorkspaceFolders": []
   },
   "files.exclude": {
     "flutter": true,
     "python": true,
     "typescript": true,
+    "docker": true
   }
 }

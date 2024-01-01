@@ -9,6 +9,10 @@
       "path": "/workspace/data"
     },
     {
+      "name": "Docker",
+      "path": "./docker"
+    },
+    {
       "name": "TypeScript",
       "path": "./typescript"
     },
@@ -38,7 +42,8 @@
       "Flutter",
       "Python",
       "data",
-      "@iamsupercb/fom"
+      "@iamsupercb/fom",
+      "Docker"
     ],
     "livePreview.portNumber": 5000
   }
