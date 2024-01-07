@@ -15,9 +15,10 @@ export async function auth(req: Request, res: Response, next: NextFunction) {
     }
     const decoded = await validate(token);
     res.locals.user = decoded;
+    logger.debug('== auth ends ==');
     next();
   } catch (err) {
+    logger.debug('== auth ends ==');
     next(err);
   }
 }
-logger.debug('== ends ==');

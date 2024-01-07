@@ -1,5 +1,5 @@
 {
-  "name": "@iamsupercb/express-common",
+  "name": "@iamsupercb/express",
   "version": "0.0.1",
   "packageManager": "yarn@4.0.2",
   "main": "dist/index.js",
@@ -15,8 +15,9 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
+    "dev": "nodemon bin/index.ts",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "@iamsupercb/common": "workspace:^",
@@ -25,10 +26,10 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
-    "@types/jest": "^29.5.11",
     "@types/jsonwebtoken": "^9.0.5",
     "@types/log4js": "^2.3.5",
-    "@types/node": "^18.19.3",
+    "@types/node": "^18.19.5",
+    "helmet": "^7.1.0",
     "jest": "^29.7.0",
     "log4js": "^6.9.1",
     "nodemon": "^3.0.2",
