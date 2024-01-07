@@ -1,0 +1,40 @@
+{
+  "logger bootstrap module": {
+    "scope": "python",
+    "prefix": "logger",
+    "body": [
+      "import logging",
+      "",
+      "logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')",
+      "logger = logging.getLogger($1)",
+      "",
+      "logger.debug('== begins ==')",
+      "logger.debug('Debug message')",
+      "logger.info('Info message')",
+      "logger.warning('Warning message')",
+      "logger.error('Error message')",
+      "logger.critical('Critical message')",
+      "logger.debug('== begins ==')"
+    ]
+  },
+  "logger add": {
+    "scope": "python",
+    "prefix": "logger",
+    "body": [
+      "logger.debug('== $1 begins ==')",
+      "logger.info('Here be dragons')",
+      "logger.debug('== $1 ends ==')"
+    ],
+    "description": "Bootsrap a typescript file."
+  },
+  "logger begins": {
+    "scope": "python",
+    "prefix": "logger",
+    "body": ["logger.debug('== $1 begins ==')"]
+  },
+  "logger ends": {
+    "scope": "python",
+    "prefix": "logger",
+    "body": ["logger.debug('== $1 ends ==')"]
+  }
+}

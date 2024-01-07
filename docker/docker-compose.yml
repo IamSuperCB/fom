@@ -1,0 +1,86 @@
+version: "3"
+name: fos-core
+services:
+  mssql:
+    container_name: FOS-mssql
+    restart: unless-stopped
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    expose: ["1433"]
+    ports:
+      - "1433:1433"
+    env_file: mssql.env
+    networks:
+      - fom
+    # volumes:
+    #   - mssqldata:/var/opt/mssql/data
+  # postgres:
+  #   container_name: FOS-postgres
+  #   image: postgres:11-alpine
+  #   restart: unless-stopped
+  #   env_file: postgres.env
+  #   logging:
+  #     driver: "none"
+  #   volumes:
+  #     - postgresdata:/var/lib/postgresql/data
+  #   expose: ["5432"]
+  #   ports:
+  #     - "5432:5432"
+  #   networks:
+  #     - fos
+  # elasticsearch:
+  #   container_name: FOS-elasticsearch
+  #   image: elasticsearch:7.17.9
+  #   expose: ["9200"]
+  #   networks:
+  #     - fos
+  #   environment:
+  #     - discovery.type=single-node
+  # wikijs:
+  #   container_name: FOS-wikijs
+  #   image: ghcr.io/requarks/wiki:2
+  #   restart: unless-stopped
+  #   env_file: wikijs.env
+  #   expose: [3000]
+  #   networks:
+  #     - fom
+  #   volumes:
+  #     - wikijscontent:/wiki/data/content
+  #   depends_on:
+  #     - postgres
+  # mirth:
+  #   container_name: FOS-mirth
+  #   image: nextgenhealthcare/connect
+  #   env_file: mirth.env
+  #   volumes:
+  #     - mirthappdata:/opt/connect/appdata
+  #   ports:
+  #     - 8080:8080/tcp
+  #     - 8443:8443/tcp
+  #   networks:
+  #     - fom
+  #   depends_on:
+  #     - postgres
+  # nginx:
+  #   container_name: FOS-nginx
+  #   image: nginx:latest
+  #   restart: unless-stopped
+  #   expose: ["443"]
+  #   ports: ["443:443"]
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+  #     - ./nginx/sites-enabled:/etc/nginx/sites-enabled
+  #     - ./nginx/logs:/var/log/nginx
+  #     - ./nginx/www:/var/www
+  #     - ./nginx/conf.d:/etc/nginx/conf.d
+  #     - $HOME/personal/certs:/etc/nginx/certs
+  #     - $HOME/personal/skunkworks:/var/www/skunkworks
+  #   networks:
+  #     - fom
+volumes:
+  # postgresdata:
+  # wikijscontent:
+  mssqldata:
+  # mirthappdata:
+networks:
+  fom:
+    external: true

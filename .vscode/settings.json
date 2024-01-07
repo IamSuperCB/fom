@@ -1,0 +1,20 @@
+{
+  "settings": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "",
+    "workbench.sideBar.location": "right",
+    "remote.autoForwardPorts": false,
+    "terminal.integrated.env.linux": {},
+    "python.terminal.activateEnvironment": false,
+    "jest.disabledWorkspaceFolders": []
+  },
+  "files.exclude": {
+    "flutter": true,
+    "python": true,
+    "typescript": true,
+    "docker": true
+  }
+}

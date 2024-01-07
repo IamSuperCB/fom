@@ -1,0 +1,50 @@
+{
+  "folders": [
+    {
+      "name": "@iamsupercb/fom",
+      "path": "."
+    },
+    {
+      "name": "data",
+      "path": "/workspace/data"
+    },
+    {
+      "name": "Docker",
+      "path": "./docker"
+    },
+    {
+      "name": "TypeScript",
+      "path": "./typescript"
+    },
+    {
+      "name": "Python",
+      "path": "./python"
+    },
+    {
+      "name": "Flutter",
+      "path": "./flutter"
+    }
+  ],
+  "settings": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Revelation (rainglow)",
+    "workbench.sideBar.location": "right",
+    "remote.autoForwardPorts": false,
+    "terminal.integrated.env.linux": {
+      "LOG4JS_DEFAULT_LEVEL": "debug",
+      "rest-client.enableTelemetry": "false"
+    },
+    "python.terminal.activateEnvironment": false,
+    "jest.disabledWorkspaceFolders": [
+      "Flutter",
+      "Python",
+      "data",
+      "@iamsupercb/fom",
+      "Docker"
+    ],
+    "livePreview.portNumber": 5000
+  }
+}

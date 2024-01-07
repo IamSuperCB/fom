@@ -1,0 +1,11 @@
+'use strict';
+import * as log4js from '@log4js-node/log4js-api';
+import { getPackageRelativeFilename } from '@iamsupercb/common';
+const logger = log4js.getLogger(getPackageRelativeFilename(module.filename));
+logger.debug('== begins ==');
+export * as controllers from './controllers';
+export * as middlewares from './middlewares';
+export * as services from './services';
+export * from './iConfiguration';
+export * from './configuration';
+logger.debug('== ends ==');
