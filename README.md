@@ -6,6 +6,8 @@ Where I go to figure out things with people.
 
 ### TypeScript
 
+Go [here](./typescript/README.md) for TypeScript notes.
+
 ### Python
 
-### Flutter
+Go [here](./python/README.md) for Python notes.

@@ -2,7 +2,7 @@
 
 ## yarn
 
-Go here for more information on yarn.
+Go [here]() for more information on yarn.
 After clonning repo
 
 ```bash
@@ -55,10 +55,28 @@ To debug
 yarn workspace @iamsupercb/hapijs run dev
 ```
 
-## Packages
+## Local Packages
 
 ### common
 
-### msal
+Go [here](./packages/common/README.md) for more notes.
+
+### express
+
+Go [here](./packages/express/README.md) for more notes.
 
 ### jupyter
+
+Go [here](./packages/jupyter/README.md) for more notes.
+
+### jwt
+
+Go [here](./packages/jwt/README.md) for more notes.
+
+### msal
+
+Go [here](./packages/msal/README.md) for more notes.
+
+### prisma
+
+Go [here](./packages/prisma/README.md) for more notes.
