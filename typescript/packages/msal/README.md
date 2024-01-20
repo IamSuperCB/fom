@@ -1,5 +1,11 @@
 # @iamsupercb/msal
 
+## Prerequisite
+
+```bash
+sudo apt-get install libsecret-1-0
+```
+
 ## Scripts
 
 ### Acquire Token By DeviceCode
