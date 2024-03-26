@@ -18,8 +18,7 @@
     "status": "nodemon bin/status.ts",
     "generate": "prisma generate",
     "migrate/init": "prisma migrate dev --name init",
-    "build": "tsc",
-    "test": "jest"
+    "build": "tsc"
   },
   "dependencies": {
     "@iamsupercb/common": "workspace:^",
